@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery | Summer Axolotl Home</title>
+    <meta
+      name="description"
+      content="Axolotl gallery from Summer Axolotl Home."
+    />
+    <link rel="icon" type="image/jpeg" href="../logo/logoo.jpeg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/gallery.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav-shell">
+        <div class="brand-wrap" aria-label="Summer Axolotl Home brand logo">
+          <img class="brand-logo" src="../logo/logoo.jpeg" alt="Summer Axolotl Home logo" />
+          <span class="brand-name">Summer Axolotl Home</span>
+        </div>
+
+        <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle navigation" type="button">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="catalogue.html">Care Guide</a>
+          <a href="gallery.html" class="active">Gallery</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="gallery-page">
+      <section class="gallery-hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Our axolotl collection</p>
+            <h1>Unique colors.<br />Same amazing species.</h1>
+            <p>
+              Discover our beautiful axolotls, each with its own unique color and personality. Healthy, well cared for and ready for a new home.
+            </p>
+          </div>
+
+          <div class="hero-visual" aria-label="Featured axolotl image">
+            <div class="axolotl-shape">
+              <img src="../image/WhatsApp%20Image%202026-10-26%20at%2015.56.53.jpeg" alt="Pink axolotl close-up" />
+            </div>
+            <span class="scribble">♡</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="catalogue-shell">
+        <div class="container filter-bar">
+          <div class="chip-row" aria-label="Axolotl filters">
+            <button class="chip active" type="button" data-filter="All">All</button>
+            <button class="chip" type="button" data-filter="Leucistic">Leucistic</button>
+            <button class="chip" type="button" data-filter="Wild Type">Wild Type</button>
+            <button class="chip" type="button" data-filter="Golden Albino">Golden Albino</button>
+            <button class="chip" type="button" data-filter="Melanoid">Melanoid</button>
+            <button class="chip" type="button" data-filter="Others">Others</button>
+          </div>
+
+          <button class="sort-btn" type="button" data-sort="price-asc">Sort by: Price (Low to High) <span>⌄</span></button>
+        </div>
+
+        <div class="container card-grid" id="card-grid">
+          <article class="product-card">
+            <div class="card-image card-leucistic">
+              <img src="../image/WhatsApp%20Image%202026-10-26%20at%2015.56.53.jpeg" alt="Leucistic axolotl" />
+              <span class="tag">Leucistic</span>
+              <button class="wish-btn" type="button" aria-label="Save item">♡</button>
+            </div>
+            <h3>Leucistic Axolotl</h3>
+            <div class="price">$45</div>
+            <p>Soft pink body with dark eyes. A very popular and beginner-friendly choice for new keepers.</p>
+            <ul class="meta-list">
+              <li><span>Size:</span> 20–30 cm</li>
+              <li><span>Lifespan:</span> 10–15 years</li>
+            </ul>
+            <button class="details-btn" type="button">View details <span>→</span></button>
+          </article>
+
+          <article class="product-card">
+            <div class="card-image card-wild">
+              <img src="../image/WhatsApp%20Image%202026-10-26%20at%2015.56.40.jpeg" alt="Wild type axolotl" />
+              <span class="tag">Wild Type</span>
+              <button class="wish-btn" type="button" aria-label="Save item">♡</button>
+            </div>
+            <h3>Wild Type Axolotl</h3>
+            <div class="price">$50</div>
+            <p>Natural dark coloration with unique patterns. A true classic axolotl with strong, natural heritage.</p>
+            <ul class="meta-list">
+              <li><span>Size:</span> 20–30 cm</li>
+              <li><span>Lifespan:</span> 10–15 years</li>
+            </ul>
+            <button class="details-btn" type="button">View details <span>→</span></button>
+          </article>
+
+          <article class="product-card">
+            <div class="card-image card-golden">
+              <img src="../image/WhatsApp%20Image%202026-10-26%20at%2015.56.43.jpeg" alt="Golden albino axolotl" />
+              <span class="tag">Golden Albino</span>
+              <button class="wish-btn" type="button" aria-label="Save item">♡</button>
+            </div>
+            <h3>Golden Albino Axolotl</h3>
+            <div class="price">$60</div>
+            <p>Bright golden color with red eyes. A striking and rare variation that stands out in any tank.</p>
+            <ul class="meta-list">
+              <li><span>Size:</span> 20–30 cm</li>
+              <li><span>Lifespan:</span> 10–15 years</li>
+            </ul>
+            <button class="details-btn" type="button">View details <span>→</span></button>
+          </article>
+
+          <article class="product-card">
+            <div class="card-image card-melanoid">
+              <img src="../image/WhatsApp%20Image%202026-10-26%20at%2015.56.49%20(2).jpeg" alt="Melanoid axolotl" />
+              <span class="tag">Melanoid</span>
+              <button class="wish-btn" type="button" aria-label="Save item">♡</button>
+            </div>
+            <h3>Melanoid Axolotl</h3>
+            <div class="price">$55</div>
+            <p>Dark body with light speckles. A unique and striking look for collectors seeking a more dramatic appearance.</p>
+            <ul class="meta-list">
+              <li><span>Size:</span> 20–30 cm</li>
+              <li><span>Lifespan:</span> 10–15 years</li>
+            </ul>
+            <button class="details-btn" type="button">View details <span>→</span></button>
+          </article>
+
+          <article class="product-card">
+            <div class="card-image card-blue">
+              <img src="../image/WhatsApp%20Image%202026-10-26%20at%2015.56.39.jpeg" alt="Blue axolotl" />
+              <span class="tag">Blue</span>
+              <button class="wish-btn" type="button" aria-label="Save item">♡</button>
+            </div>
+            <h3>Blue Axolotl</h3>
+            <div class="price">$65</div>
+            <p>A rare and beautiful blue tint with a calm, elegant look. Perfect for anyone seeking something standout.</p>
+            <ul class="meta-list">
+              <li><span>Size:</span> 20–30 cm</li>
+              <li><span>Lifespan:</span> 10–15 years</li>
+            </ul>
+            <button class="details-btn" type="button">View details <span>→</span></button>
+          </article>
+
+          <article class="product-card">
+            <div class="card-image card-leopard">
+              <img src="../image/WhatsApp%20Image%202026-10-26%20at%2015.56.54.jpeg" alt="Leopard axolotl" />
+              <span class="tag">Leopard</span>
+              <button class="wish-btn" type="button" aria-label="Save item">♡</button>
+            </div>
+            <h3>Leopard Axolotl</h3>
+            <div class="price">$70</div>
+            <p>Dark spots on a light body. A unique pattern that makes each animal feel truly one of a kind.</p>
+            <ul class="meta-list">
+              <li><span>Size:</span> 20–30 cm</li>
+              <li><span>Lifespan:</span> 10–15 years</li>
+            </ul>
+            <button class="details-btn" type="button">View details <span>→</span></button>
+          </article>
+
+          <article class="product-card">
+            <div class="card-image card-pink">
+              <img src="../image/WhatsApp%20Image%202026-10-26%20at%2015.56.53%20(1).jpeg" alt="Pink axolotl" />
+              <span class="tag">Pink</span>
+              <button class="wish-btn" type="button" aria-label="Save item">♡</button>
+            </div>
+            <h3>Pink Axolotl</h3>
+            <div class="price">$60</div>
+            <p>A classic and charming color with soft pink skin and a friendly personality. Great for both beginners and enthusiasts.</p>
+            <ul class="meta-list">
+              <li><span>Size:</span> 20–25 cm</li>
+              <li><span>Lifespan:</span> 10–15 years</li>
+            </ul>
+            <button class="details-btn" type="button">View details <span>→</span></button>
+          </article>
+
+          <article class="product-card">
+            <div class="card-image card-marbled">
+              <img src="../image/WhatsApp%20Image%202026-10-26%20at%2015.56.58.jpeg" alt="Marbled axolotl" />
+              <span class="tag">Marbled</span>
+              <button class="wish-btn" type="button" aria-label="Save item">♡</button>
+            </div>
+            <h3>Marbled Axolotl</h3>
+            <div class="price">$75</div>
+            <p>Beautiful mix of colors and patterns. Each one is unique, making this a standout favorite for collectors.</p>
+            <ul class="meta-list">
+              <li><span>Size:</span> 20–30 cm</li>
+              <li><span>Lifespan:</span> 10–15 years</li>
+            </ul>
+            <button class="details-btn" type="button">View details <span>→</span></button>
+          </article>
+        </div>
+
+        <div class="container pagination-wrap" aria-label="Page navigation">
+          <button class="pager-arrow" type="button" aria-label="Previous page" id="prev-page">←</button>
+          <div class="page-numbers" id="page-numbers"></div>
+          <button class="pager-arrow" type="button" aria-label="Next page" id="next-page">→</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand brand-footer" aria-label="Summer Axolotl Home home">
+            <img src="../logo/logoo.jpeg" alt="Summer Axolotl Home logo" class="brand-logo" />
+            <span>Summer Axolotl Home</span>
+          </a>
+          <p>Premium axolotls with healthy routines, transparent guidance, and trusted support.</p>
+        </div>
+
+        <div class="footer-links">
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="catalogue.html">Care Guide</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h3>Contact</h3>
+          <ul>
+            <li><a href="tel:+14242409780">+1 (424) 240-9780</a></li>
+            <li><a href="https://wa.me/14242409780?text=Hello%20Summer%20Axolotl%20Home" target="_blank" rel="noreferrer">WhatsApp</a></li>
+            <li><a href="mailto:summerhome671@gmail.com">summerhome671@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <p>© <span id="year"></span> Summer Axolotl Home. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <div class="detail-modal" id="detail-modal" aria-hidden="true">
+      <div class="detail-modal-backdrop" data-close="true"></div>
+      <div class="detail-modal-panel" role="dialog" aria-modal="true" aria-labelledby="detail-title">
+        <button class="modal-close" type="button" aria-label="Close details">×</button>
+        <div id="detail-content"></div>
+      </div>
+    </div>
+
+    <script src="../js/gallery.js"></script>
+    <script>
+      const navToggle = document.querySelector('.nav-toggle');
+      const mainNav = document.querySelector('.main-nav');
+
+      if (navToggle && mainNav) {
+        navToggle.addEventListener('click', () => {
+          const isOpen = mainNav.classList.toggle('is-open');
+          navToggle.setAttribute('aria-expanded', String(isOpen));
+        });
+
+        mainNav.querySelectorAll('a').forEach((link) => {
+          link.addEventListener('click', () => {
+            mainNav.classList.remove('is-open');
+            navToggle.setAttribute('aria-expanded', 'false');
+          });
+        });
+      }
+    </script>
+  </body>
+</html>

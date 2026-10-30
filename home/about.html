@@ -3,32 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About | Summer Axolotls Home</title>
+    <title>About | Summer Axolotl Home</title>
     <meta
       name="description"
-      content="Learn about Summer Axolotls Home, our mission, our care standards, and the customer experiences that define our brand."
+      content="About Summer Axolotl Home and our love for axolotls."
     />
-    <link rel="icon" type="image/jpeg" href="../logo/WhatsApp%20Image%202026-10-26%20at%2015.49.10.jpeg" />
+    <link rel="icon" type="image/jpeg" href="../logo/logoo.jpeg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/about.css" />
   </head>
   <body>
-    <header class="site-header" id="site-header">
+    <header class="site-header">
       <div class="container nav-shell">
-        <a href="index.html" class="brand" aria-label="Summer Axolotls Home home">
-          <img src="../logo/WhatsApp%20Image%202026-10-26%20at%2015.49.10.jpeg" alt="Summer Axolotls Home logo" />
-          <span class="brand-wordmark">
-            <strong>Summer</strong>
-            <span>Axolotls Home</span>
-          </span>
-        </a>
+        <div class="brand" aria-label="Summer Axolotl Home brand logo">
+          <img class="brand-logo" src="../logo/logoo.jpeg" alt="Summer Axolotl Home logo" />
+          <span class="brand-name">Summer Axolotl Home</span>
+        </div>
 
-        <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation" type="button">
           <span></span>
           <span></span>
           <span></span>
@@ -36,308 +33,131 @@
 
         <nav class="site-nav" id="site-nav" aria-label="Main navigation">
           <a href="index.html">Home</a>
-          <a href="about.html">About</a>
-          <a href="catalogue.html">Catalogue</a>
+          <a href="about.html" class="active">About</a>
+          <a href="catalogue.html">Care Guide</a>
+          <a href="gallery.html">Gallery</a>
           <a href="contact.html">Contact</a>
         </nav>
       </div>
     </header>
 
-    <main id="content">
-      <section class="about-hero">
-        <div class="container about-hero-inner">
-          <div class="about-hero-copy">
+    <main class="about-page">
+      <section class="about-intro">
+        <div class="container intro-grid">
+          <div class="about-copy">
             <p class="eyebrow">About us</p>
-            <h1>Thoughtful care, calm companions, and a healthier start for every axolotl.</h1>
+            <h1>Small creature.<br />Big wonder.</h1>
             <p>
-              Summer Axolotls Home was built around one simple idea: every axolotl deserves a calm environment,
-              expert attention, and a confident beginning in a loving aquarium home.
+              We’re passionate about axolotls — their unique biology, incredible abilities and the important role they play in our world. This website is our way of sharing their story and helping more people appreciate and protect them.
             </p>
-            <div class="hero-cta">
-              <a href="catalogue.html" class="button-primary">View collection</a>
-              <a href="contact.html" class="button-secondary">Talk to us</a>
-            </div>
           </div>
 
-          <div class="about-hero-media">
-            <img src="../image/WhatsApp%20Image%202026-10-26%20at%2015.56.53.jpeg" alt="Axolotl in a calm aquarium setting" />
-            <div class="floating-card">
-              <strong>Health-first care</strong>
-              <span>Water quality, gentle handling, and honest guidance at every step.</span>
+          <div class="intro-visual">
+            <div class="axolotl-blob">
+              <img src="../image/WhatsApp%20Image%202026-10-26%20at%2015.56.53.jpeg" alt="Pink axolotl" />
             </div>
           </div>
         </div>
       </section>
 
-      <section class="signature-strip">
-        <div class="container strip-grid">
-          <div>
-            <strong>Family-focused</strong>
-            <span>Small, attentive care routines built for peaceful homes.</span>
+      <section class="mission-band">
+        <div class="container mission-grid">
+          <div class="mission-media">
+            <img src="../image/WhatsApp%20Image%202026-10-26%20at%2015.56.40.jpeg" alt="Grey axolotl resting on a rock" />
           </div>
-          <div>
-            <strong>Healthy by design</strong>
-            <span>Clean habitats, careful observation, and trusted husbandry.</span>
-          </div>
-          <div>
-            <strong>Real support</strong>
-            <span>Friendly guidance before, during, and after your order.</span>
+
+          <div class="mission-copy">
+            <p class="eyebrow eyebrow-dark">Our mission</p>
+            <h2>To inform, inspire<br />and protect axolotls.</h2>
+            <p>
+              We aim to educate people about axolotls, raise awareness about their endangered status, and encourage responsible care and conservation. By sharing reliable information and beautiful content, we hope to build a community that cares about their future.
+            </p>
+            <a href="#" class="learn-btn">Learn More <span>→</span></a>
           </div>
         </div>
       </section>
 
-      <section class="section-spacing story-section">
+      <section class="values-band">
+        <div class="container values-wrap">
+          <p class="eyebrow eyebrow-dark values-label">Our values</p>
+          <h2>What drives us</h2>
+          <p class="values-lead">
+            We believe that education creates change. Every axolotl deserves a safe environment, and every person can make a difference.
+          </p>
+
+          <div class="values-grid">
+            <article class="value-item">
+              <div class="value-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6.5A2.5 2.5 0 0 1 6.5 4H20v13.5H6.5A2.5 2.5 0 0 0 4 20V6.5Z"/><path d="M4 6.5V20"/><path d="M8.5 7.5h7.5"/><path d="M8.5 10.5h7.5"/></svg>
+              </div>
+              <h3>Education</h3>
+              <p>Share knowledge and facts.</p>
+            </article>
+            <article class="value-item">
+              <div class="value-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 5c-6.5 0-10 3.5-10 10 6.5 0 10-3.5 10-10Z"/><path d="M9 15c1.2-1.7 3.6-2.8 7-3"/><path d="M9 15c-1.5-1.2-2.5-3.1-3-5.3"/></svg>
+              </div>
+              <h3>Conservation</h3>
+              <p>Support their protection.</p>
+            </article>
+            <article class="value-item">
+              <div class="value-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 12a3 3 0 1 0 0-6a3 3 0 0 0 0 6Z"/><path d="M4 18c.8-2.1 2.7-3.3 5-3.3s4.2 1.2 5 3.3"/><path d="M15.5 10.5a2.3 2.3 0 1 0 0-4.6a2.3 2.3 0 0 0 0 4.6Z"/><path d="M18.5 18c-.7-1.8-2.2-2.8-4.1-2.8"/></svg>
+              </div>
+              <h3>Community</h3>
+              <p>Build a caring audience.</p>
+            </article>
+            <article class="value-item">
+              <div class="value-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8l1.7 4.6 4.6 1.7-4.6 1.7L12 15.4l-1.7-4.6-4.6-1.7L10.3 7.4z"/></svg>
+              </div>
+              <h3>Passion</h3>
+              <p>Because they’re truly special.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="story-band">
         <div class="container story-grid">
-          <div class="story-media">
-            <img src="https://images.unsplash.com/photo-1544551763-46a013bb70b5?auto=format&fit=crop&w=1200&q=80" alt="Axolotl in a carefully maintained aquarium" />
-          </div>
           <div class="story-copy">
             <p class="eyebrow eyebrow-dark">Our story</p>
-            <h2>We raise axolotls with the same patience and intention we’d want for our own home.</h2>
+            <h2>It all started with fascination.</h2>
             <p>
-              We believe every axolotl should have a calm environment, a healthy routine, and a strong start in life.
-              That is why we focus on long-term care, gentle handling, and transparent communication from the first message to the day your new companion arrives.
+              What began as a simple curiosity quickly became a deep passion. The more we learned about axolotls, the more we realized how extraordinary they are — and how much they need our support.
             </p>
-            <p>
-              Summer Axolotls Home exists for aquarium lovers who want something more than a pet — they want a well-cared-for companion with a resilient temperament and a beautifully healthy appearance.
+            <p class="story-note">
+              That’s why we created this platform.
             </p>
           </div>
-        </div>
-      </section>
 
-      <section class="section-spacing values-section">
-        <div class="container">
-          <div class="section-header section-header-center">
-            <p class="eyebrow eyebrow-dark">Why families choose us</p>
-            <h2>Built around quality, trust, and a calm experience.</h2>
-          </div>
-
-          <div class="value-grid">
-            <article class="value-card">
-              <div class="value-icon">01</div>
-              <h3>Healthy routines</h3>
-              <p>We monitor water quality, feeding, and behavior to keep every axolotl comfortable, strong, and well-adjusted.</p>
-            </article>
-
-            <article class="value-card">
-              <div class="value-icon">02</div>
-              <h3>Gentle care</h3>
-              <p>Every animal is raised in a calm setting with careful attention to stress reduction and confident development.</p>
-            </article>
-
-            <article class="value-card">
-              <div class="value-icon">03</div>
-              <h3>Real support</h3>
-              <p>From questions before purchase to setup guidance after delivery, we stay available and helpful every step of the way.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section-spacing temperament-section">
-        <div class="container temperament-grid">
-          <div class="temperament-copy">
-            <p class="eyebrow eyebrow-dark">Temperament</p>
-            <h2>Healthy, gentle, and confident from the start.</h2>
-            <p>
-              Our priority is not only beautiful coloration and strong health, but also the personality and ease of care that make these animals enjoyable companions in a home aquarium.
-            </p>
-            <ul class="check-list">
-              <li>Well-socialized routines that support calm behavior</li>
-              <li>Care plans designed for long-term confidence and comfort</li>
-              <li>Honest advice about setup, feeding, and daily care</li>
-            </ul>
-          </div>
-
-          <div class="temperament-media">
-            <img src="../image/WhatsApp%20Image%202026-10-26%20at%2015.56.53.jpeg" alt="A healthy axolotl resting in a clean aquarium" />
-          </div>
-        </div>
-      </section>
-
-      <section class="section-spacing process-section">
-        <div class="container">
-          <div class="section-header section-header-center">
-            <p class="eyebrow eyebrow-dark">The journey</p>
-            <h2>Simple, honest, and designed around your peace of mind.</h2>
-          </div>
-
-          <div class="process-grid">
-            <article class="process-card">
-              <span>01</span>
-              <h3>Connect</h3>
-              <p>Tell us what you’re looking for and ask any questions before choosing your axolotl.</p>
-            </article>
-
-            <article class="process-card">
-              <span>02</span>
-              <h3>Match</h3>
-              <p>We help you choose a companion that suits your setup, expectations, and care level.</p>
-            </article>
-
-            <article class="process-card">
-              <span>03</span>
-              <h3>Support</h3>
-              <p>From transport to first-day care, we stay available to make the transition smooth and reassuring.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section-spacing testimonials-section" aria-labelledby="testimonials-title">
-        <div class="container">
-          <div class="section-header section-header-center">
-            <p class="eyebrow eyebrow-dark">Testimonials</p>
-            <h2 id="testimonials-title">Families and hobbyists trust our care.</h2>
-          </div>
-
-          <div class="testimonial-slider" aria-live="polite">
-            <button class="carousel-button prev" type="button" aria-label="Previous testimonial">←</button>
-            <div class="testimonial-track">
-              <article class="testimonial active">
-                <div class="avatar avatar-one">AM</div>
-                <div class="review-header">
-                  <div>
-                    <h3>Alicia M.</h3>
-                    <span>Houston, USA</span>
-                  </div>
-                  <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
-                </div>
-                <p>“The entire process felt professional and reassuring. The axolotl arrived healthy, calm, and beautifully cared for.”</p>
-              </article>
-
-              <article class="testimonial">
-                <div class="avatar avatar-two">LC</div>
-                <div class="review-header">
-                  <div>
-                    <h3>Lucia C.</h3>
-                    <span>Mexico City, Mexico</span>
-                  </div>
-                  <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
-                </div>
-                <p>“We got honest advice, quick communication, and a pet that looked strong from the start. Highly recommended.”</p>
-              </article>
-
-              <article class="testimonial">
-                <div class="avatar avatar-three">JR</div>
-                <div class="review-header">
-                  <div>
-                    <h3>James R.</h3>
-                    <span>London, England</span>
-                  </div>
-                  <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
-                </div>
-                <p>“Everything was clear, calm, and genuinely helpful. We felt supported before and after the purchase.”</p>
-              </article>
+          <div class="story-visual">
+            <div class="story-blob">
+              <img src="../image/WhatsApp%20Image%202026-10-26%20at%2015.56.53.jpeg" alt="Happy pink axolotl" />
             </div>
-            <button class="carousel-button next" type="button" aria-label="Next testimonial">→</button>
-          </div>
-        </div>
-      </section>
-
-      <section class="section-spacing faq-section" aria-labelledby="faq-title">
-        <div class="container faq-wrap">
-          <div class="section-header section-header-center">
-            <p class="eyebrow eyebrow-dark">FAQ</p>
-            <h2 id="faq-title">Questions we hear most often.</h2>
-          </div>
-
-          <div class="faq-list">
-            <div class="faq-item active">
-              <button class="faq-question" type="button">
-                <span>How long does shipping usually take?</span>
-                <span class="faq-icon">+</span>
-              </button>
-              <div class="faq-answer">
-                <p>Most orders are processed within 24 to 48 hours, with delivery times depending on your area and shipping method. We provide updates throughout the process.</p>
-              </div>
-            </div>
-
-            <div class="faq-item">
-              <button class="faq-question" type="button">
-                <span>What is your refund policy?</span>
-                <span class="faq-icon">+</span>
-              </button>
-              <div class="faq-answer">
-                <p>If a valid issue is reported with the order, we review the situation and offer a replacement or refund based on policy and documented conditions.</p>
-              </div>
-            </div>
-
-            <div class="faq-item">
-              <button class="faq-question" type="button">
-                <span>Can I track my order?</span>
-                <span class="faq-icon">+</span>
-              </button>
-              <div class="faq-answer">
-                <p>Yes. Once shipped, we share tracking details so you can follow your order and know when to expect delivery.</p>
-              </div>
-            </div>
-
-            <div class="faq-item">
-              <button class="faq-question" type="button">
-                <span>Are payments secure?</span>
-                <span class="faq-icon">+</span>
-              </button>
-              <div class="faq-answer">
-                <p>Yes. We use trusted payment methods designed to protect customer information and provide a smooth checkout experience.</p>
-              </div>
-            </div>
-
-            <div class="faq-item">
-              <button class="faq-question" type="button">
-                <span>Do you provide care help after purchase?</span>
-                <span class="faq-icon">+</span>
-              </button>
-              <div class="faq-answer">
-                <p>Absolutely. We provide guidance on setup, feeding, and basic aquarium care so your axolotl settles in with confidence.</p>
-              </div>
-            </div>
-
-            <div class="faq-item">
-              <button class="faq-question" type="button">
-                <span>How can I contact support?</span>
-                <span class="faq-icon">+</span>
-              </button>
-              <div class="faq-answer">
-                <p>You can contact us by phone, WhatsApp, or email. We aim to answer questions quickly and clearly.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section-spacing cta-band">
-        <div class="container cta-shell">
-          <div>
-            <p class="eyebrow eyebrow-dark">Ready to begin?</p>
-            <h2>Let’s help you find the right axolotl for your home.</h2>
-          </div>
-          <div class="cta-actions">
-            <a href="catalogue.html" class="button-primary">Explore the collection</a>
-            <a href="contact.html" class="button-secondary">Contact us</a>
+            <div class="story-tag">Real creatures.<br />Real stories.</div>
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="site-footer" id="contact">
+    <footer class="site-footer">
       <div class="container footer-grid">
         <div class="footer-brand">
-          <a href="index.html" class="brand brand-footer" aria-label="Summer Axolotls Home home">
-            <img src="../image/WhatsApp%20Image%202026-10-26%20at%2015.49.10.jpeg" alt="Summer Axolotls Home" />
-            <span>Summer Axolotls Home</span>
+          <a href="index.html" class="brand brand-footer" aria-label="Summer Axolotl Home home">
+            <img src="../logo/logoo.jpeg" alt="Summer Axolotl Home logo" class="brand-logo" />
+            <span>Summer Axolotl Home</span>
           </a>
-          <p>
-            We help aquarium lovers choose healthy, vibrant axolotls and feel confident from the first message to the first day at home.
-          </p>
+          <p>Premium axolotls with healthy routines, transparent guidance, and trusted support.</p>
         </div>
 
         <div class="footer-links">
           <h3>Explore</h3>
           <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="catalogue.html">Catalogue</a></li>
             <li><a href="about.html">About</a></li>
+            <li><a href="catalogue.html">Care Guide</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
@@ -345,8 +165,8 @@
         <div class="footer-links">
           <h3>Contact</h3>
           <ul>
-            <li><a href="tel:+14242409780">Call/WhatsApp +1 (424) 240-9780</a></li>
-            <li><a href="https://wa.me/14242409780" target="_blank" rel="noreferrer">WhatsApp</a></li>
+            <li><a href="tel:+14242409780">+1 (424) 240-9780</a></li>
+            <li><a href="https://wa.me/14242409780?text=Hello%20Summer%20Axolotl%20Home" target="_blank" rel="noreferrer">WhatsApp</a></li>
             <li><a href="mailto:summerhome671@gmail.com">summerhome671@gmail.com</a></li>
           </ul>
         </div>
@@ -354,11 +174,29 @@
 
       <div class="footer-bottom">
         <div class="container">
-          <p>© Copyright <span id="year"></span> Summer Axolotls Home. All rights reserved.</p>
+          <p>© <span id="year"></span> Summer Axolotl Home. All rights reserved.</p>
         </div>
       </div>
     </footer>
 
-    <script src="../js/about.js"></script>
+    <script>
+      const navToggle = document.querySelector('.nav-toggle');
+      const siteNav = document.querySelector('.site-nav');
+
+      if (navToggle && siteNav) {
+        navToggle.addEventListener('click', () => {
+          const isOpen = siteNav.classList.toggle('is-open');
+          navToggle.setAttribute('aria-expanded', String(isOpen));
+        });
+
+        siteNav.querySelectorAll('a').forEach((link) => {
+          link.addEventListener('click', () => {
+            siteNav.classList.remove('is-open');
+            navToggle.setAttribute('aria-expanded', 'false');
+          });
+        });
+      }
+    </script>
   </body>
 </html>
+

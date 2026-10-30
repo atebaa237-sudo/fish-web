@@ -3,34 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Catalogue | Summer Axolotls Home</title>
+    <title>Care Guide | Summer Axolotl Home</title>
     <meta
       name="description"
-      content="Browse the available axolotls, prices, and gallery selections at Summer Axolotls Home."
+      content="Axolotl care guide from Summer Axolotl Home."
     />
-    <link rel="icon" type="image/jpeg" href="../logo/WhatsApp%20Image%202026-10-26%20at%2015.49.10.jpeg" />
+    <link rel="icon" type="image/jpeg" href="../logo/logoo.jpeg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/catalogue.css" />
   </head>
   <body>
-    <a class="skip-link" href="#content">Skip to content</a>
+    <header class="site-header">
+      <div class="container nav-shell">
+        <div class="brand" aria-label="Summer Axolotl Home brand logo">
+          <img class="brand-logo" src="../logo/logoo.jpeg" alt="Summer Axolotl Home logo" />
+          <span class="brand-name">Summer Axolotl Home</span>
+        </div>
 
-    <header class="site-header" id="site-header">
-      <div class="container header-inner">
-        <a href="index.html" class="brand" aria-label="Summer Axolotls Home home">
-          <img src="../logo/WhatsApp%20Image%202026-10-26%20at%2015.49.10.jpeg" alt="Summer Axolotls Home logo" />
-          <span class="brand-wordmark">
-            <strong>Summer</strong>
-            <strong>Axolotls Home</strong>
-          </span>
-        </a>
-
-        <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation" type="button">
           <span></span>
           <span></span>
           <span></span>
@@ -39,112 +34,137 @@
         <nav class="site-nav" id="site-nav" aria-label="Main navigation">
           <a href="index.html">Home</a>
           <a href="about.html">About</a>
-          <a href="catalogue.html">Catalogue</a>
-          <a href="index.html#contact">Contact</a>
+          <a href="catalogue.html" class="active">Care Guide</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="contact.html">Contact</a>
         </nav>
       </div>
     </header>
 
-    <main id="content" class="catalogue-page">
-      <section class="section-spacing">
-        <div class="container section-heading">
-          <p class="eyebrow">Available axolotls</p>
-          <h1>Find your ideal companion</h1>
-          <p>
-            Browse available axolotls, compare colors, and contact us directly for the next step in bringing one home.
-          </p>
-        </div>
-
-        <div class="container catalog-toolbar">
-          <div class="search-field">
-            <label class="sr-only" for="hero-search">Search axolotls</label>
-            <input id="hero-search" class="search-input" type="search" placeholder="Search by name, type, or description" />
+    <main class="care-page">
+      <section class="care-intro">
+        <div class="container intro-grid">
+          <div class="care-copy">
+            <p class="eyebrow">Care guide</p>
+            <h1>Healthy habits.<br />Happy axolotls.</h1>
+            <p>
+              Axolotls thrive in stable, gentle conditions. The right water quality, temperature, and routine can make a world of difference for your pet’s health, comfort, and long-term wellbeing.
+            </p>
           </div>
 
-          <div class="filter-field">
-            <label for="sort-products">Sort by</label>
-            <select id="sort-products">
-              <option value="featured">Featured</option>
-              <option value="low-high">Price: Low to High</option>
-              <option value="high-low">Price: High to Low</option>
-            </select>
-          </div>
-        </div>
-
-        <div class="container price-filters">
-          <div class="price-filter">
-            <label for="price-min">Min price</label>
-            <input id="price-min" type="range" min="50" max="400" step="10" value="50" />
-            <span id="min-price-label">$50.00</span>
-          </div>
-
-          <div class="price-filter">
-            <label for="price-max">Max price</label>
-            <input id="price-max" type="range" min="50" max="400" step="10" value="400" />
-            <span id="max-price-label">$400.00</span>
-          </div>
-        </div>
-
-        <div class="container">
-          <div id="category-list" class="category-list" aria-label="Product categories"></div>
-        </div>
-
-        <div class="featured-section">
-          <div class="container">
-            <div class="section-heading compact-heading">
-              <p class="eyebrow">Featured picks</p>
-              <h2>Our most loved axolotls</h2>
+          <div class="intro-visual">
+            <div class="axolotl-blob">
+              <img src="../image/WhatsApp%20Image%202026-10-26%20at%2015.56.53.jpeg" alt="Pink axolotl in water" />
             </div>
-            <div id="featured-grid" class="product-grid"></div>
           </div>
-        </div>
-
-        <div class="container product-list-wrap">
-          <div id="product-grid" class="product-grid"></div>
-          <p id="no-products" class="empty-state" hidden>No axolotls match your current filters.</p>
         </div>
       </section>
 
-      <section class="testimonial-section section-spacing">
-        <div class="container section-heading">
-          <p class="eyebrow">Customer stories</p>
-          <h2>Trusted by aquarium lovers</h2>
+      <section class="guide-band">
+        <div class="container guide-grid">
+          <div class="guide-media">
+            <img src="../image/WhatsApp%20Image%202026-10-26%20at%2015.56.40.jpeg" alt="Grey axolotl resting on a rock" />
+          </div>
+
+          <div class="guide-copy">
+            <p class="eyebrow eyebrow-dark">Our approach</p>
+            <h2>Simple care, strong results.</h2>
+            <p>
+              We focus on low-stress routines, proper filtration, balanced temperatures, and careful observation. Healthy axolotls need clean water, consistent handling, and a calm environment that supports their natural rhythm.
+            </p>
+            <a href="#" class="learn-btn">Read guide <span>→</span></a>
+          </div>
         </div>
-        <div class="container testimonial-slider">
-          <button class="prev" type="button" aria-label="Previous testimonial">←</button>
-          <div id="testimonial-track" class="testimonial-track"></div>
-          <button class="next" type="button" aria-label="Next testimonial">→</button>
+      </section>
+
+      <section class="values-band">
+        <div class="container values-wrap">
+          <p class="eyebrow eyebrow-dark values-label">What matters most</p>
+          <h2>Care essentials</h2>
+          <p class="values-lead">
+            Great care comes down to consistency. A few daily habits can help your axolotl stay active, healthy, and comfortable.
+          </p>
+
+          <div class="values-grid">
+            <article class="value-item">
+              <div class="value-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5C7.5 3.5 4 6.9 4 11.3c0 5.4 5.1 9.2 8 12.2 2.9-3 8-6.8 8-12.2 0-4.4-3.5-7.8-8-7.8Zm0 4.2c1.8 0 3.3 1.5 3.3 3.3S13.8 14.3 12 14.3 8.7 12.8 8.7 11 10.2 7.7 12 7.7Z"/></svg>
+              </div>
+              <h3>Water quality</h3>
+              <p>Keep filtration steady and monitor parameters regularly.</p>
+            </article>
+            <article class="value-item">
+              <div class="value-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.5 4.5A8 8 0 0 0 12 7.8a8 8 0 0 0-6.5 11.7A8 8 0 0 0 18.5 4.5ZM12 9.5v8"/><path d="M9 12.5h6"/></svg>
+              </div>
+              <h3>Gentle routine</h3>
+              <p>Feed consistently and avoid unnecessary stress.</p>
+            </article>
+            <article class="value-item">
+              <div class="value-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11.5h16"/><path d="M6.5 7.5h11a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2h-11a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2Z"/><path d="M8.5 15.5h7"/></svg>
+              </div>
+              <h3>Stable setup</h3>
+              <p>Use a calm tank with low, even lighting and quiet surroundings.</p>
+            </article>
+            <article class="value-item">
+              <div class="value-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8l1.7 4.6 4.6 1.7-4.6 1.7L12 15.4l-1.7-4.6-4.6-1.7L10.3 7.4z"/></svg>
+              </div>
+              <h3>Observation</h3>
+              <p>Watch behavior, appetite, and movement to catch issues early.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="story-band">
+        <div class="container story-grid">
+          <div class="story-copy">
+            <p class="eyebrow eyebrow-dark">Why it matters</p>
+            <h2>Good care creates confidence.</h2>
+            <p>
+              When their environment is clean and predictable, axolotls settle in more quickly and feel safer. A calm, well-maintained tank supports more natural behavior and better long-term health.
+            </p>
+            <p class="story-note">That’s why every detail matters.</p>
+          </div>
+
+          <div class="story-visual">
+            <div class="story-blob">
+              <img src="../image/WhatsApp%20Image%202026-10-26%20at%2015.56.53.jpeg" alt="Happy pink axolotl" />
+            </div>
+            <div class="story-tag">Clean water.<br />Calm homes.</div>
+          </div>
         </div>
       </section>
     </main>
 
-    <footer class="site-footer" id="contact">
+    <footer class="site-footer">
       <div class="container footer-grid">
         <div class="footer-brand">
-          <a href="index.html" class="brand brand-footer" aria-label="Summer Axolotls Home home">
-            <img src="../image/WhatsApp%20Image%202026-10-26%20at%2015.49.10.jpeg" alt="Summer Axolotls Home" />
-            <span>Summer Axolotls Home</span>
+          <a href="index.html" class="brand brand-footer" aria-label="Summer Axolotl Home home">
+            <img src="../logo/logoo.jpeg" alt="Summer Axolotl Home logo" class="brand-logo" />
+            <span>Summer Axolotl Home</span>
           </a>
-          <p>
-            Summer Axolotls Home raises healthy, calm axolotls with proper husbandry and honest guidance for every new owner.
-          </p>
+          <p>Premium axolotls with healthy routines, transparent guidance, and trusted support.</p>
         </div>
 
         <div class="footer-links">
-          <h3>Quick Links</h3>
+          <h3>Explore</h3>
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="catalogue.html">Catalogue</a></li>
-            <li><a href="index.html#contact">Contact</a></li>
+            <li><a href="catalogue.html">Care Guide</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
 
         <div class="footer-links">
           <h3>Contact</h3>
           <ul>
-            <li><a href="tel:+14242409780">Call/WhatsApp +1 (424) 240-9780</a></li>
-            <li><a href="https://wa.me/14242409780" target="_blank" rel="noreferrer">WhatsApp</a></li>
+            <li><a href="tel:+14242409780">+1 (424) 240-9780</a></li>
+            <li><a href="https://wa.me/14242409780?text=Hello%20Summer%20Axolotl%20Home" target="_blank" rel="noreferrer">WhatsApp</a></li>
             <li><a href="mailto:summerhome671@gmail.com">summerhome671@gmail.com</a></li>
           </ul>
         </div>
@@ -152,20 +172,28 @@
 
       <div class="footer-bottom">
         <div class="container">
-          <p>© Copyright <span id="year"></span> Summer Axolotls Home. All rights reserved.</p>
+          <p>© <span id="year"></span> Summer Axolotl Home. All rights reserved.</p>
         </div>
       </div>
     </footer>
 
-    <div id="product-modal" class="modal" aria-hidden="true">
-      <div class="modal-backdrop" data-close="true"></div>
-      <div class="modal-panel">
-        <button class="modal-close" type="button" aria-label="Close">×</button>
-        <div id="modal-content"></div>
-      </div>
-    </div>
+    <script>
+      const navToggle = document.querySelector('.nav-toggle');
+      const siteNav = document.querySelector('.site-nav');
 
-    <script src="../js/data.js"></script>
-    <script src="../js/catalogue.js"></script>
+      if (navToggle && siteNav) {
+        navToggle.addEventListener('click', () => {
+          const isOpen = siteNav.classList.toggle('is-open');
+          navToggle.setAttribute('aria-expanded', String(isOpen));
+        });
+
+        siteNav.querySelectorAll('a').forEach((link) => {
+          link.addEventListener('click', () => {
+            siteNav.classList.remove('is-open');
+            navToggle.setAttribute('aria-expanded', 'false');
+          });
+        });
+      }
+    </script>
   </body>
 </html>
