@@ -202,6 +202,48 @@ img {
   line-height: 1.7;
 }
 
+.gallery-contact-actions {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.gallery-contact-btn {
+  display: flex;
+  min-width: 0;
+  min-height: 68px;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  padding: 10px 12px;
+  border: 1px solid rgba(10, 44, 53, 0.1);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.76);
+  color: var(--navy);
+  box-shadow: 0 8px 18px rgba(10, 44, 53, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.gallery-contact-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 22px rgba(10, 44, 53, 0.1);
+}
+
+.gallery-contact-btn span {
+  color: var(--teal-deep);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.gallery-contact-btn strong {
+  overflow-wrap: anywhere;
+  font-size: clamp(0.7rem, 0.9vw, 0.88rem);
+  line-height: 1.35;
+}
+
 .hero-visual {
   position: relative;
   display: flex;
@@ -756,27 +798,37 @@ img {
   min-height: 54px;
   padding: 0 22px;
   border-radius: 999px;
-  background: linear-gradient(135deg, #7ae0ea, #9feef4 54%, #f2d1e4 100%);
-  color: var(--navy);
+  background: linear-gradient(135deg, #2e8fa8, #7ad8eb 100%);
+  color: #ffffff;
   font-weight: 800;
   text-align: center;
+  box-shadow: 0 14px 24px rgba(46, 143, 168, 0.25);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.detail-order-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 28px rgba(46, 143, 168, 0.32);
 }
 
 .detail-contact-actions {
-  display: flex;
-  flex: 1 1 280px;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 10px;
+  margin-top: 28px;
 }
 
 .detail-contact-actions .detail-order-btn {
-  flex: 1 1 150px;
-  padding: 0 16px;
+  min-width: 0;
+  min-height: 54px;
+  padding: 8px 10px;
+  font-size: clamp(0.72rem, 1vw, 0.9rem);
 }
 
-.email-order-btn {
-  border: 1px solid rgba(10, 44, 53, 0.12);
-  background: #fff;
+.detail-order-btn small {
+  display: block;
+  font-size: 0.65rem;
+  line-height: 1.2;
 }
 
 .detail-info-band {
@@ -894,6 +946,15 @@ img {
     font-size: clamp(2.7rem, 13vw, 4.8rem);
   }
 
+  .gallery-contact-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-contact-btn {
+    min-height: 56px;
+    padding: 10px 14px;
+  }
+
   .axolotl-shape {
     height: 260px;
   }
@@ -939,17 +1000,17 @@ img {
     font-size: 1.9rem;
   }
 
-  .detail-qty-row {
-    align-items: stretch;
-  }
-
   .detail-order-btn {
     width: 100%;
   }
 
-  .detail-contact-actions {
-    display: grid;
-    width: 100%;
+  .detail-contact-actions .detail-order-btn {
+    padding: 8px 4px;
+    font-size: 0.7rem;
+  }
+
+  .detail-order-btn small {
+    font-size: 0.56rem;
   }
 
   .footer-shell {

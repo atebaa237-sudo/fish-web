@@ -8,11 +8,11 @@ function formatProductPrice(value) {
     : new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(value);
 }
 
-function getOrderMessage(quantity) {
+function getOrderMessage() {
   const priceDetails = selectedProduct.price === null
     ? ' Please let me know the price and availability.'
     : ` for ${formatProductPrice(selectedProduct.price)} each.`;
-  return `Hello, I want to inquire about ${quantity} ${selectedProduct.name}${priceDetails}`;
+  return `Hello, I want to inquire about the ${selectedProduct.name} axolotl${priceDetails}`;
 }
 
 function renderProductDetails() {
@@ -71,16 +71,10 @@ function renderProductDetails() {
           </div>
         </div>
 
-        <div class="detail-qty-row">
-          <div class="qty-box" aria-label="Quantity selector">
-            <button class="qty-btn" type="button" data-qty="decrease" aria-label="Decrease quantity">−</button>
-            <span class="qty-value" aria-live="polite">1</span>
-            <button class="qty-btn" type="button" data-qty="increase" aria-label="Increase quantity">+</button>
-          </div>
-          <div class="detail-contact-actions">
-            <a class="detail-order-btn whatsapp-order-btn" href="https://wa.me/14242409780?text=${encodeURIComponent(orderMessage)}" target="_blank" rel="noreferrer">Order on WhatsApp</a>
-            <a class="detail-order-btn email-order-btn" href="mailto:summerhome671@gmail.com?subject=${encodeURIComponent(`Order inquiry: ${selectedProduct.name}`)}&body=${encodeURIComponent(orderMessage)}">Order by Email</a>
-          </div>
+        <div class="detail-contact-actions">
+          <a class="detail-order-btn phone-order-btn" href="tel:+14242409780" aria-label="Call +1 (424) 240-9780">Call<small>+1 424 240 9780</small></a>
+          <a class="detail-order-btn whatsapp-order-btn" href="https://wa.me/14242409780?text=${encodeURIComponent(orderMessage)}" target="_blank" rel="noreferrer">WhatsApp</a>
+          <a class="detail-order-btn email-order-btn" href="mailto:summerhome671@gmail.com?subject=${encodeURIComponent(`Order inquiry: ${selectedProduct.name}`)}&body=${encodeURIComponent(orderMessage)}">Email</a>
         </div>
       </section>
     </div>
@@ -100,23 +94,15 @@ function renderProductDetails() {
     </section>
   `;
 
-  const quantityValue = productDetail.querySelector('.qty-value');
   const updateOrderLinks = () => {
-    const message = getOrderMessage(Number(quantityValue.textContent) || 1);
+    const message = getOrderMessage();
     productDetail.querySelector('.whatsapp-order-btn').href =
       `https://wa.me/14242409780?text=${encodeURIComponent(message)}`;
     productDetail.querySelector('.email-order-btn').href =
       `mailto:summerhome671@gmail.com?subject=${encodeURIComponent(`Order inquiry: ${selectedProduct.name}`)}&body=${encodeURIComponent(message)}`;
   };
 
-  productDetail.querySelector('[data-qty="decrease"]').addEventListener('click', () => {
-    quantityValue.textContent = String(Math.max(1, Number(quantityValue.textContent) - 1));
-    updateOrderLinks();
-  });
-  productDetail.querySelector('[data-qty="increase"]').addEventListener('click', () => {
-    quantityValue.textContent = String(Number(quantityValue.textContent) + 1);
-    updateOrderLinks();
-  });
+  updateOrderLinks();
 }
 
 renderProductDetails();
