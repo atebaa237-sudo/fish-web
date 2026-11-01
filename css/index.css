@@ -765,6 +765,14 @@ img {
   font-size: 0.9rem;
 }
 
+.color-price {
+  display: inline-block;
+  margin: 0 14px 16px;
+  color: #0b2d36;
+  font-size: 1.05rem;
+  font-weight: 800;
+}
+
 .testimonial-band {
   scroll-margin-top: 1.5rem;
   background: linear-gradient(180deg, #edf7f7 0%, #e3f3f4 100%);

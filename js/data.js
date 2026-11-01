@@ -11,7 +11,7 @@ const siteConfig = {
 
 const localGalleryImages = [
   '../image/albino $100 4.jpeg',
-  '../image/chimera $1200.jpeg',
+  '../image/Mosaic $1200.jpeg',
   '../image/chimera $1200 1.jpeg',
   '../image/chimera $1500.jpeg',
   '../image/GFP $150.jpeg',
