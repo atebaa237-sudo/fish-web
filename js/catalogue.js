@@ -25,8 +25,6 @@ const priceMaxEl = document.getElementById('price-max');
 const minPriceLabel = document.getElementById('min-price-label');
 const maxPriceLabel = document.getElementById('max-price-label');
 const sortSelectEl = document.getElementById('sort-products');
-const navToggle = document.querySelector('.nav-toggle');
-const siteNav = document.querySelector('.site-nav');
 const heroSection = document.querySelector('.hero');
 
 function initializeHeroBackground() {
@@ -291,20 +289,6 @@ function openWhatsAppForProduct(productId) {
 }
 
 function attachEvents() {
-  if (navToggle && siteNav) {
-    navToggle.addEventListener('click', () => {
-      const isOpen = siteNav.classList.toggle('is-open');
-      navToggle.setAttribute('aria-expanded', String(isOpen));
-    });
-
-    siteNav.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', () => {
-        siteNav.classList.remove('is-open');
-        navToggle.setAttribute('aria-expanded', 'false');
-      });
-    });
-  }
-
   if (!hasStorefrontData) return;
 
   searchInputs.forEach(input => {

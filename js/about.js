@@ -1,5 +1,3 @@
-const navToggle = document.querySelector('.nav-toggle');
-const siteNav = document.querySelector('.site-nav');
 const yearEl = document.getElementById('year');
 const testimonialItems = document.querySelectorAll('.testimonial');
 const prevButton = document.querySelector('.carousel-button.prev');
@@ -8,20 +6,6 @@ const faqItems = document.querySelectorAll('.faq-item');
 
 if (yearEl) {
   yearEl.textContent = new Date().getFullYear();
-}
-
-if (navToggle && siteNav) {
-  navToggle.addEventListener('click', () => {
-    const isOpen = siteNav.classList.toggle('is-open');
-    navToggle.setAttribute('aria-expanded', String(isOpen));
-  });
-
-  siteNav.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => {
-      siteNav.classList.remove('is-open');
-      navToggle.setAttribute('aria-expanded', 'false');
-    });
-  });
 }
 
 if (testimonialItems.length) {

@@ -1,85 +1,72 @@
-const galleryFiles = [
-  'WhatsApp Image 2026-10-26 at 15.56.32.jpeg',
-  'WhatsApp Image 2026-10-26 at 15.56.35.jpeg',
-  'WhatsApp Image 2026-10-26 at 15.56.37.jpeg',
-  'WhatsApp Image 2026-10-26 at 15.56.38.jpeg',
-  'WhatsApp Image 2026-10-26 at 15.56.39 (1).jpeg',
-  'WhatsApp Image 2026-10-26 at 15.56.39.jpeg',
-  'WhatsApp Image 2026-10-26 at 15.56.40 (1).jpeg',
-  'WhatsApp Image 2026-10-26 at 15.56.40.jpeg',
-  'WhatsApp Image 2026-10-26 at 15.56.41 (1).jpeg',
-  'WhatsApp Image 2026-10-26 at 15.56.41.jpeg',
-  'WhatsApp Image 2026-10-26 at 15.56.42.jpeg',
-  'WhatsApp Image 2026-10-26 at 15.56.43.jpeg',
-  'WhatsApp Image 2026-10-26 at 15.56.44.jpeg',
-  'WhatsApp Image 2026-10-26 at 15.56.45.jpeg',
-  'WhatsApp Image 2026-10-26 at 15.56.46.jpeg',
-  'WhatsApp Image 2026-10-26 at 15.56.47 (1).jpeg',
-  'WhatsApp Image 2026-10-26 at 15.56.47.jpeg',
-  'WhatsApp Image 2026-10-26 at 15.56.48.jpeg',
-  'WhatsApp Image 2026-10-26 at 15.56.49 (1).jpeg',
-  'WhatsApp Image 2026-10-26 at 15.56.49 (2).jpeg',
-  'WhatsApp Image 2026-10-26 at 15.56.49.jpeg',
-  'WhatsApp Image 2026-10-26 at 15.56.50.jpeg',
-  'WhatsApp Image 2026-10-26 at 15.56.51.jpeg',
-  'WhatsApp Image 2026-10-26 at 15.56.53 (1).jpeg',
-  'WhatsApp Image 2026-10-26 at 15.56.53.jpeg',
-  'WhatsApp Image 2026-10-26 at 15.56.54 (1).jpeg',
-  'WhatsApp Image 2026-10-26 at 15.56.54 (2).jpeg',
-  'WhatsApp Image 2026-10-26 at 15.56.54.jpeg',
-  'WhatsApp Image 2026-10-26 at 15.56.55 (1).jpeg',
-  'WhatsApp Image 2026-10-26 at 15.56.55 (2).jpeg',
-  'WhatsApp Image 2026-10-26 at 15.56.55.jpeg',
-  'WhatsApp Image 2026-10-26 at 15.56.56 (1).jpeg',
-  'WhatsApp Image 2026-10-26 at 15.56.56 (2).jpeg',
-  'WhatsApp Image 2026-10-26 at 15.56.56.jpeg',
-  'WhatsApp Image 2026-10-26 at 15.56.57 (1).jpeg',
-  'WhatsApp Image 2026-10-26 at 15.56.57.jpeg',
-  'WhatsApp Image 2026-10-26 at 15.56.58 (1).jpeg',
-  'WhatsApp Image 2026-10-26 at 15.56.58 (2).jpeg',
-  'WhatsApp Image 2026-10-26 at 15.56.58.jpeg',
-  'WhatsApp Image 2026-10-26 at 15.56.59 (1).jpeg',
-  'WhatsApp Image 2026-10-26 at 15.56.59 (2).jpeg',
-  'WhatsApp Image 2026-10-26 at 15.56.59.jpeg'
+const productListings = [
+  ['chimera $1500.jpeg', 'Chimera', 1500],
+  ['chimera $1200.jpeg', 'Chimera', 1200],
+  ['chimera $1200 1.jpeg', 'Chimera', 1200],
+  ['Mosaic $700.jpeg', 'Mosaic', 700],
+  ['Mosaic $500.jpeg', 'Mosaic', 500],
+  ['mosaic $500 1.jpeg', 'Mosaic', 500],
+  ['mosaic $500 3.jpeg', 'Mosaic', 500],
+  ['mosaic $150 2.jpeg', 'Mosaic', 150],
+  ['GFP $200.jpeg', 'GFP', 200],
+  ['GFP $200 2.jpeg', 'GFP', 200],
+  ['GFP $150.jpeg', 'GFP', 150],
+  ['GFP $150 1.jpeg', 'GFP', 150],
+  ['GFP $150 3.jpeg', 'GFP', 150],
+  ['GFP melanoid.jpeg', 'GFP Melanoid', null],
+  ['Golden $200.jpeg', 'Golden', 200],
+  ['Lavender $200.jpeg', 'Lavender', 200],
+  ['Levander $200.jpeg', 'Lavender', 200],
+  ['albino $100 4.jpeg', 'Albino', 100],
+  ['melanoid $200.jpeg', 'Melanoid', 200],
+  ['pyrite $200.jpeg', 'Pyrite', 200],
+  ['wild copper $200.jpeg', 'Wild Copper', 200],
+  ['widcopper3 200$.jpeg', 'Wild Copper', 200],
+  ['Stardust mosaic.jpeg', 'Stardust Mosaic', 300],
+  ['white albino $150.jpeg', 'White Albino', 150],
+  ['Leucistic $100 1.jpeg', 'Leucistic', 100],
+  ['Leucistic $100 5.jpeg', 'Leucistic', 100],
+  ['Leucistic $100 6.jpeg', 'Leucistic', 100],
+  ['Leucistic $100 7.jpeg', 'Leucistic', 100],
+  ['Leucistic $100 8.jpeg', 'Leucistic', 100],
+  ['Leucitic $100 1.jpeg', 'Leucistic', 100],
+  ['Leucitic $101.jpeg', 'Leucistic', 101]
 ];
 
 const categoryDescriptions = {
-  Leucistic: 'Pale pink skin, feathery gills, and a soft, calm appearance that makes this axolotl look gentle and easy to admire.',
-  'Wild Type': 'Deep natural tones with subtle patterns, showing the classic dark axolotl look seen in the wild.',
-  'Golden Albino': 'Warm golden tones with bright eyes and a glowing color that stands out beautifully in the aquarium.',
-  Melanoid: 'Rich, dark pigmentation with a smooth silhouette and a striking dramatic contrast across the body.',
-  Leopard: 'Light base tones interrupted by bold dark spots, creating a distinct and eye-catching pattern.',
-  Pink: 'Soft rose coloration with smooth skin and a friendly, approachable appearance that suits a peaceful tank.',
-  Marbled: 'A blended mix of colors and markings, giving each animal a one-of-a-kind and collectible look.',
-  Blue: 'Cool blue-gray hues with a rare, elegant finish that makes the axolotl feel unique and highly prized.'
+  Albino: 'Albino color morph. Contact us to confirm this individual’s availability and details.',
+  Chimera: 'Chimera color morph. Contact us to confirm this individual’s availability and details.',
+  'GFP Melanoid': 'GFP Melanoid color morph. Contact us for this individual’s price and availability.',
+  GFP: 'GFP color morph. Contact us to confirm this individual’s availability and details.',
+  Golden: 'Golden color morph. Contact us to confirm this individual’s availability and details.',
+  Lavender: 'Lavender color morph. Contact us to confirm this individual’s availability and details.',
+  Leucistic: 'Leucistic color morph. Contact us to confirm this individual’s availability and details.',
+  Melanoid: 'Melanoid color morph. Contact us to confirm this individual’s availability and details.',
+  Mosaic: 'Mosaic color morph. Contact us to confirm this individual’s availability and details.',
+  Pyrite: 'Pyrite color morph. Contact us to confirm this individual’s availability and details.',
+  'Stardust Mosaic': 'Stardust Mosaic color morph. Contact us to confirm this individual’s availability and details.',
+  'White Albino': 'White Albino color morph. Contact us to confirm this individual’s availability and details.',
+  'Wild Copper': 'Wild Copper color morph. Contact us to confirm this individual’s availability and details.'
 };
 
-const categoryOrder = ['Leucistic', 'Wild Type', 'Golden Albino', 'Melanoid', 'Leopard', 'Pink', 'Marbled', 'Blue'];
-
-const productData = galleryFiles.map((file, index) => {
-  const category = categoryOrder[index % categoryOrder.length];
-  const basePrice = [45, 50, 55, 60, 60, 65, 70, 75][index % 8];
-
-  return {
-    name: `${category} Axolotl ${index + 1}`,
-    category,
-    price: basePrice,
-    image: `../image/${file}`,
-    description: categoryDescriptions[category],
-    dimensions: '20–30 cm',
-    lifespan: '10–15 years'
-  };
-});
+const productData = productListings.map(([file, category, price], index) => ({
+  id: `axolotl-${index + 1}`,
+  name: category,
+  category,
+  price,
+  image: `../image/${encodeURIComponent(file)}`,
+  description: categoryDescriptions[category]
+}));
 
 const state = {
   filter: 'All',
-  sort: 'price-asc',
+  sort: 'price-desc',
   page: 1,
   perPage: 8
 };
 
 const siteConfig = {
-  whatsappNumber: '14242409780'
+  whatsappNumber: '14242409780',
+  email: 'summerhome671@gmail.com'
 };
 
 const cardGrid = document.getElementById('card-grid');
@@ -95,6 +82,17 @@ function formatPrice(value) {
   return new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(value);
 }
 
+function formatListingPrice(value) {
+  return value === null ? 'Contact for price' : formatPrice(value);
+}
+
+function getOrderMessage(quantity, product) {
+  const priceDetails = product.price === null
+    ? ' Please let me know the price and availability.'
+    : ` for ${formatPrice(product.price)} each.`;
+  return `Hello, I want to inquire about ${quantity} ${product.name}${priceDetails}`;
+}
+
 function getFilteredProducts() {
   const filtered = state.filter === 'All'
     ? [...productData]
@@ -102,6 +100,8 @@ function getFilteredProducts() {
 
   const sorted = [...filtered];
   sorted.sort((a, b) => {
+    if (a.price === null) return b.price === null ? 0 : 1;
+    if (b.price === null) return -1;
     if (state.sort === 'price-asc') return a.price - b.price;
     if (state.sort === 'price-desc') return b.price - a.price;
     return 0;
@@ -113,26 +113,16 @@ function getFilteredProducts() {
 function openDetailModal(productId) {
   if (!detailModal || !detailContent) return;
 
-  const product = productData.find((item) => item.name === productId || item.category === productId);
-  const selectedProduct = product || productData[0];
+  const product = productData.find((item) => item.id === productId);
+  if (!product) return;
+
+  const selectedProduct = product;
   const galleryImages = selectedProduct.gallery || [selectedProduct.image, selectedProduct.image, selectedProduct.image, selectedProduct.image];
   const detailText = [
-    {
-      title: 'Physical Appearance',
-      value: 'Soft pink body, smooth skin, and gentle dark eyes with an unmistakably calm expression.'
-    },
-    {
-      title: 'Personality & Behavior',
-      value: 'Calm, friendly, and active at night with a curious, gentle temperament.'
-    },
-    {
-      title: 'Unique Characteristics',
-      value: 'Known for its gentle nature, remarkable adaptability, and beautifully soft color contrast.'
-    },
-    {
-      title: 'Color Patterns',
-      value: 'Pale pink tones with darker eyes and a clear contrast that gives the animal a classic appeal.'
-    }
+    { title: 'Species', value: selectedProduct.category },
+    { title: 'Listed Price', value: formatListingPrice(selectedProduct.price) },
+    { title: 'Photo', value: 'The image shows the individual in this listing.' },
+    { title: 'Availability', value: 'Contact us to confirm current availability.' }
   ];
 
   detailContent.innerHTML = `
@@ -161,7 +151,7 @@ function openDetailModal(productId) {
       <div class="detail-copy-panel">
         <h2 id="detail-title">${selectedProduct.name}</h2>
         <div class="detail-price-row">
-          <span class="detail-price">${formatPrice(selectedProduct.price)}</span>
+          <span class="detail-price">${formatListingPrice(selectedProduct.price)}</span>
           <span class="stock-badge">● In Stock</span>
         </div>
 
@@ -170,19 +160,19 @@ function openDetailModal(productId) {
         <div class="detail-specs">
           <div class="detail-spec">
             <span class="spec-icon">◌</span>
-            <div><strong>Size</strong><small>${selectedProduct.dimensions}</small></div>
+            <div><strong>Species</strong><small>${selectedProduct.category}</small></div>
           </div>
           <div class="detail-spec">
             <span class="spec-icon">❤</span>
-            <div><strong>Lifespan</strong><small>${selectedProduct.lifespan}</small></div>
+            <div><strong>Price</strong><small>${formatListingPrice(selectedProduct.price)}</small></div>
           </div>
           <div class="detail-spec">
             <span class="spec-icon">◫</span>
-            <div><strong>Age</strong><small>Juvenile</small></div>
+            <div><strong>Listing</strong><small>Individual shown</small></div>
           </div>
           <div class="detail-spec">
             <span class="spec-icon">✦</span>
-            <div><strong>Care</strong><small>Easy</small></div>
+            <div><strong>Availability</strong><small>Confirm with us</small></div>
           </div>
         </div>
 
@@ -192,7 +182,10 @@ function openDetailModal(productId) {
             <span class="qty-value">1</span>
             <button class="qty-btn" type="button" data-qty="increase">+</button>
           </div>
-          <a class="detail-order-btn" href="https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent(`Hello, I want to order the ${selectedProduct.name} for ${formatPrice(selectedProduct.price)}.`)}" target="_blank" rel="noreferrer">Order on WhatsApp</a>
+          <div class="detail-contact-actions">
+            <a class="detail-order-btn whatsapp-order-btn" href="https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent(getOrderMessage(1, selectedProduct))}" target="_blank" rel="noreferrer">Order on WhatsApp</a>
+            <a class="detail-order-btn email-order-btn" href="mailto:${siteConfig.email}?subject=${encodeURIComponent(`Order inquiry: ${selectedProduct.name}`)}&body=${encodeURIComponent(getOrderMessage(1, selectedProduct))}">Order by Email</a>
+          </div>
         </div>
       </div>
     </div>
@@ -224,13 +217,25 @@ function openDetailModal(productId) {
   });
 
   const qtyValue = detailContent.querySelector('.qty-value');
+  const updateOrderLinks = () => {
+    const quantity = Number(qtyValue.textContent) || 1;
+    const message = getOrderMessage(quantity, selectedProduct);
+    const whatsappLink = detailContent.querySelector('.whatsapp-order-btn');
+    const emailLink = detailContent.querySelector('.email-order-btn');
+
+    whatsappLink.href = `https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent(message)}`;
+    emailLink.href = `mailto:${siteConfig.email}?subject=${encodeURIComponent(`Order inquiry: ${selectedProduct.name}`)}&body=${encodeURIComponent(message)}`;
+  };
+  updateOrderLinks();
   detailContent.querySelector('[data-qty="decrease"]')?.addEventListener('click', () => {
     const current = Number(qtyValue.textContent) || 1;
     qtyValue.textContent = String(Math.max(1, current - 1));
+    updateOrderLinks();
   });
   detailContent.querySelector('[data-qty="increase"]')?.addEventListener('click', () => {
     const current = Number(qtyValue.textContent) || 1;
     qtyValue.textContent = String(current + 1);
+    updateOrderLinks();
   });
 
   detailContent.querySelectorAll('[data-close="true"]').forEach((button) => {
@@ -260,16 +265,15 @@ function renderCards() {
       <div class="card-image">
         <img src="${product.image}" alt="${product.name}" />
         <span class="tag">${product.category}</span>
-        <button class="wish-btn" type="button" aria-label="Save item">♡</button>
       </div>
       <h3>${product.name}</h3>
-      <div class="price">${formatPrice(product.price)}</div>
+      <div class="price">${formatListingPrice(product.price)}</div>
       <p>${product.description}</p>
       <ul class="meta-list">
-        <li><span>Size:</span> ${product.dimensions}</li>
-        <li><span>Lifespan:</span> ${product.lifespan}</li>
+        <li><span>Species:</span> ${product.category}</li>
+        <li><span>Listing:</span> Individual axolotl shown</li>
       </ul>
-      <button class="details-btn" type="button" data-detail-product="${product.name}">View details <span>→</span></button>
+      <button class="details-btn" type="button" data-detail-product="${product.id}">View details <span>→</span></button>
     </article>
   `).join('');
 

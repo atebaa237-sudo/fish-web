@@ -8,7 +8,7 @@
       name="description"
       content="About Summer Axolotl Home and our love for axolotls."
     />
-    <link rel="icon" type="image/jpeg" href="../logo/logoo.jpeg" />
+    <link rel="icon" type="image/png" href="../image/logo.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,26 +16,32 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/about.css" />
+    <link rel="stylesheet" href="../css/navigation.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/floating-actions.css" />
   </head>
   <body>
     <header class="site-header">
       <div class="container nav-shell">
         <div class="brand" aria-label="Summer Axolotl Home brand logo">
-          <img class="brand-logo" src="../logo/logoo.jpeg" alt="Summer Axolotl Home logo" />
+          <img class="brand-logo" src="../image/logo.png" alt="Summer Axolotl Home logo" />
           <span class="brand-name">Summer Axolotl Home</span>
         </div>
 
-        <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation" type="button">
-          <span></span>
-          <span></span>
-          <span></span>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation menu" type="button">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
         </button>
 
         <nav class="site-nav" id="site-nav" aria-label="Main navigation">
           <a href="index.html">Home</a>
+          <a href="index.html#faq">FAQ</a>
+          <a href="index.html#reviews">Reviews</a>
           <a href="about.html" class="active">About</a>
           <a href="catalogue.html">Care Guide</a>
           <a href="gallery.html">Gallery</a>
+          <a href="upcoming.html">Upcoming Axolotls</a>
           <a href="contact.html">Contact</a>
         </nav>
       </div>
@@ -54,7 +60,7 @@
 
           <div class="intro-visual">
             <div class="axolotl-blob">
-              <img src="../image/WhatsApp%20Image%202026-10-26%20at%2015.56.53.jpeg" alt="Pink axolotl" />
+              <img src="../image/Leucistic%20%24100%201.jpeg" alt="Pink axolotl" />
             </div>
           </div>
         </div>
@@ -133,7 +139,7 @@
 
           <div class="story-visual">
             <div class="story-blob">
-              <img src="../image/WhatsApp%20Image%202026-10-26%20at%2015.56.53.jpeg" alt="Happy pink axolotl" />
+              <img src="../image/Leucistic%20%24100%202.jpeg" alt="Happy pink axolotl" />
             </div>
             <div class="story-tag">Real creatures.<br />Real stories.</div>
           </div>
@@ -145,7 +151,7 @@
       <div class="container footer-grid">
         <div class="footer-brand">
           <a href="index.html" class="brand brand-footer" aria-label="Summer Axolotl Home home">
-            <img src="../logo/logoo.jpeg" alt="Summer Axolotl Home logo" class="brand-logo" />
+            <img src="../image/logo.png" alt="Summer Axolotl Home logo" class="brand-logo" />
             <span>Summer Axolotl Home</span>
           </a>
           <p>Premium axolotls with healthy routines, transparent guidance, and trusted support.</p>
@@ -179,24 +185,7 @@
       </div>
     </footer>
 
-    <script>
-      const navToggle = document.querySelector('.nav-toggle');
-      const siteNav = document.querySelector('.site-nav');
-
-      if (navToggle && siteNav) {
-        navToggle.addEventListener('click', () => {
-          const isOpen = siteNav.classList.toggle('is-open');
-          navToggle.setAttribute('aria-expanded', String(isOpen));
-        });
-
-        siteNav.querySelectorAll('a').forEach((link) => {
-          link.addEventListener('click', () => {
-            siteNav.classList.remove('is-open');
-            navToggle.setAttribute('aria-expanded', 'false');
-          });
-        });
-      }
-    </script>
+    <script src="../js/navigation.js"></script>
+    <script src="../js/floating-actions.js"></script>
   </body>
 </html>
-

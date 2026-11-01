@@ -245,12 +245,16 @@ img {
 }
 
 .filter-bar {
+  position: sticky;
+  top: var(--sticky-header-height, 5.75rem);
+  z-index: 35;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 14px;
   flex-wrap: wrap;
   padding: 12px 0 18px;
+  background: var(--page-bg);
 }
 
 .chip-row {
@@ -293,10 +297,11 @@ img {
 .card-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 22px;
+  gap: clamp(1rem, 2vw, 1.375rem);
 }
 
 .product-card {
+  min-width: 0;
   background: rgba(255,255,255,0.68);
   border: 1px solid var(--line);
   border-radius: 24px;
@@ -331,19 +336,6 @@ img {
   font-size: 0.72rem;
   font-weight: 700;
   letter-spacing: 0.02em;
-}
-
-.wish-btn {
-  position: absolute;
-  right: 12px;
-  top: 12px;
-  width: 32px;
-  height: 32px;
-  border: none;
-  border-radius: 50%;
-  background: rgba(255,255,255,0.7);
-  color: var(--navy);
-  font-size: 1.1rem;
 }
 
 .product-card h3 {
@@ -845,6 +837,23 @@ img {
   text-align: center;
 }
 
+.detail-contact-actions {
+  display: flex;
+  flex: 1 1 280px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.detail-contact-actions .detail-order-btn {
+  flex: 1 1 150px;
+  padding: 0 16px;
+}
+
+.email-order-btn {
+  border: 1px solid rgba(10, 44, 53, 0.12);
+  background: #fff;
+}
+
 .detail-info-band {
   margin-top: 30px;
   background: rgba(121, 223, 231, 0.08);
@@ -909,7 +918,6 @@ img {
   .footer-shell {
     grid-template-columns: 1fr;
   }
-}
 
   .detail-grid,
   .detail-info-grid {
@@ -969,6 +977,27 @@ img {
     grid-template-columns: 1fr;
   }
 
+  .card-image {
+    height: clamp(12rem, 62vw, 17rem);
+  }
+
+  .product-card h3 {
+    margin: 1rem 1rem 0.5rem;
+    font-size: clamp(1.25rem, 6vw, 1.6rem);
+  }
+
+  .product-card .price,
+  .product-card p,
+  .product-card .meta-list {
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+
+  .product-card .details-btn {
+    min-height: 44px;
+    margin: 1rem;
+  }
+
   .chip-row {
     width: 100%;
   }
@@ -993,7 +1022,26 @@ img {
     width: 100%;
   }
 
+  .detail-contact-actions {
+    display: grid;
+    width: 100%;
+  }
+
   .footer-shell {
     text-align: center;
+  }
+}
+
+@media (max-width: 1023px) {
+  .chip-row {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scrollbar-width: thin;
+    padding-bottom: 0.25rem;
+  }
+
+  .chip {
+    flex: 0 0 auto;
   }
 }

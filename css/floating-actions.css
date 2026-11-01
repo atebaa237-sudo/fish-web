@@ -1,0 +1,85 @@
+.floating-actions {
+  position: fixed;
+  z-index: 30;
+  right: max(1rem, env(safe-area-inset-right, 0px));
+  bottom: calc(1rem + env(safe-area-inset-bottom, 0px));
+  left: max(1rem, env(safe-area-inset-left, 0px));
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  pointer-events: none;
+}
+
+.floating-actions a,
+.floating-actions button {
+  display: inline-flex;
+  width: 3.5rem;
+  height: 3.5rem;
+  flex: 0 0 3.5rem;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  border-radius: 50%;
+  color: #fff;
+  box-shadow: 0 0.4rem 1.2rem rgba(5, 28, 33, 0.22);
+  cursor: pointer;
+  pointer-events: auto;
+  transition: transform 180ms ease, box-shadow 180ms ease, opacity 180ms ease;
+}
+
+.floating-actions a:hover,
+.floating-actions button:hover {
+  transform: translateY(-0.2rem);
+  box-shadow: 0 0.6rem 1.4rem rgba(5, 28, 33, 0.28);
+}
+
+.floating-actions a:focus-visible,
+.floating-actions button:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 3px;
+}
+
+.floating-whatsapp {
+  background: #20c56a;
+}
+
+.floating-scroll-top {
+  background: #f27b18;
+}
+
+.floating-scroll-top[hidden] {
+  display: none;
+}
+
+.floating-actions svg {
+  width: 1.75rem;
+  height: 1.75rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
+}
+
+.floating-whatsapp svg {
+  width: 2rem;
+  height: 2rem;
+  fill: currentColor;
+  stroke: none;
+}
+
+@media (max-width: 480px) {
+  .floating-actions a,
+  .floating-actions button {
+    width: 3.25rem;
+    height: 3.25rem;
+    flex-basis: 3.25rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .floating-actions a,
+  .floating-actions button {
+    transition-duration: 0.01ms;
+  }
+}

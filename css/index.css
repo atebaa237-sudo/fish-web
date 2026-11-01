@@ -565,6 +565,7 @@ img {
 }
 
 .faq-band {
+  scroll-margin-top: 1.5rem;
   background: linear-gradient(180deg, #eef7f8 0%, #eaf3f3 100%);
   padding: 54px 0 40px;
 }
@@ -765,6 +766,7 @@ img {
 }
 
 .testimonial-band {
+  scroll-margin-top: 1.5rem;
   background: linear-gradient(180deg, #edf7f7 0%, #e3f3f4 100%);
   padding: 54px 0 34px;
 }
@@ -866,24 +868,6 @@ img {
 .author span {
   color: var(--muted);
   font-size: 0.82rem;
-}
-
-.testimonial-controls {
-  display: flex;
-  justify-content: center;
-  gap: 12px;
-  margin-top: 24px;
-}
-
-.testimonial-btn {
-  width: 46px;
-  height: 46px;
-  border: 1px solid rgba(12, 43, 51, 0.1);
-  border-radius: 50%;
-  background: rgba(255,255,255,0.8);
-  color: var(--navy);
-  font-size: 1.2rem;
-  cursor: pointer;
 }
 
 .facts-band {
@@ -1224,8 +1208,71 @@ img {
     display: none;
   }
 
-  .footer-shell {
-    flex-direction: column;
-    align-items: flex-start;
+}
+
+@media (max-width: 760px) {
+  .testimonial-band {
+    padding: 2.5rem 0 2rem;
+  }
+
+  .testimonial-wrap {
+    gap: 1rem;
+  }
+
+  .testimonial-head h2 {
+    font-size: clamp(1.65rem, 7vw, 2.2rem);
+    line-height: 1.15;
+    overflow-wrap: anywhere;
+  }
+
+  .testimonial-carousel {
+    min-width: 0;
+    padding-top: 0.25rem;
+  }
+
+  .testimonial-track {
+    display: grid;
+    min-height: 0;
+  }
+
+  .testimonial-item {
+    position: relative;
+    grid-area: 1 / 1;
+    min-width: 0;
+    padding: clamp(1.25rem, 5vw, 1.75rem);
+    border-radius: 1.25rem;
+    transform: translateX(0);
+  }
+
+  .testimonial-item:not(.active) {
+    pointer-events: none;
+  }
+
+  .stars {
+    font-size: 1.05rem;
+    letter-spacing: 0.16em;
+    margin-bottom: 0.75rem;
+  }
+
+  .testimonial-item p {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    font-size: 0.98rem;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+  }
+
+  .author {
+    max-width: 100%;
+  }
+
+  .author-copy {
+    min-width: 0;
+  }
+
+  .author strong,
+  .author span {
+    overflow-wrap: anywhere;
   }
 }
